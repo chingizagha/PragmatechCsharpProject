@@ -1,0 +1,16 @@
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.deps.json
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.runtimeconfig.json
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.runtimeconfig.dev.json
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.dll
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\ref\Task12.dll
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\bin\Debug\net5.0\Task12.pdb
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.csproj.AssemblyReference.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.AssemblyInfoInputs.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.AssemblyInfo.cs
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.csproj.CoreCompileInputs.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.dll
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\ref\Task12.dll
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.pdb
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week03\Task12\obj\Debug\net5.0\Task12.genruntimeconfig.cache
