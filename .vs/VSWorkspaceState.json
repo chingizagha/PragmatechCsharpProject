@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Tasks",
-    "\\Tasks\\Week01",
     "\\Tasks\\Week01\\Task01",
-    "\\Tasks\\Week03",
-    "\\Tasks\\Week03\\Task06"
+    "\\Tasks\\Week04",
+    "\\Tasks\\Week04\\Task01",
+    "\\Tasks\\Week04\\Task03"
   ],
-  "SelectedNode": "\\Tasks\\Week03\\Task06\\Program.cs",
+  "SelectedNode": "\\Tasks\\Week04\\Task03\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
