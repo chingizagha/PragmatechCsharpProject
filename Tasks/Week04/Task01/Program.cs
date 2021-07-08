@@ -25,10 +25,10 @@ namespace Task01
             int[] reverseNum = randomArr;
             Array.Reverse(reverseNum);
 
-            foreach(var item in reverseNum)
+            foreach (var item in reverseNum)
             {
-                Console.Write(item+"=");
-                
+                Console.Write(item + "=");
+
             }
             Console.WriteLine("=");
 
