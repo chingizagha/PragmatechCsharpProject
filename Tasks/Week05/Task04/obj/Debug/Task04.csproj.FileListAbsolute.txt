@@ -1,0 +1,10 @@
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\bin\Debug\Task04.exe.config
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\bin\Debug\Task04.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\bin\Debug\Task04.pdb
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.csproj.AssemblyReference.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.Form1.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.Properties.Resources.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.csproj.GenerateResource.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.csproj.CoreCompileInputs.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task04\obj\Debug\Task04.pdb

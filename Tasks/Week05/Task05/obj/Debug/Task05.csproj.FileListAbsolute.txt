@@ -1,0 +1,9 @@
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\bin\Debug\Task05.exe.config
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\bin\Debug\Task05.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\bin\Debug\Task05.pdb
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.Form1.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.Properties.Resources.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.csproj.GenerateResource.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.csproj.CoreCompileInputs.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week05\Task05\obj\Debug\Task05.pdb
