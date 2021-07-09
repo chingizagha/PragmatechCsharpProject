@@ -51,6 +51,7 @@ namespace Task01
             this.firstValue.Name = "firstValue";
             this.firstValue.Size = new System.Drawing.Size(133, 26);
             this.firstValue.TabIndex = 0;
+            this.firstValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // secondValue
             // 
@@ -64,6 +65,7 @@ namespace Task01
             this.secondValue.Name = "secondValue";
             this.secondValue.Size = new System.Drawing.Size(133, 26);
             this.secondValue.TabIndex = 1;
+            this.secondValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxOperator
             // 
@@ -102,7 +104,7 @@ namespace Task01
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(120, 41);
             this.btnResult.TabIndex = 5;
-            this.btnResult.Text = "Hesabla";
+            this.btnResult.Text = "Calculate";
             this.btnResult.UseVisualStyleBackColor = true;
             this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
@@ -110,7 +112,7 @@ namespace Task01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(716, 382);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.label1);

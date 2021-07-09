@@ -24,6 +24,7 @@ namespace Task01
             comboBoxOperator.Items.Add("-");
             comboBoxOperator.Items.Add("*");
             comboBoxOperator.Items.Add("/");
+            comboBoxOperator.Items.Add("%");
             comboBoxOperator.SelectedIndex = 0;
         }
         private void btnResult_Click(object sender, EventArgs e)
@@ -42,6 +43,9 @@ namespace Task01
                     break;
                 case "*":
                     resultLabel.Text = (first * second).ToString();
+                    break;
+                case "%":
+                    resultLabel.Text = (first % second).ToString();
                     break;
                 case "/":
                     resultLabel.Text = (Convert.ToDouble(first) / second).ToString();
