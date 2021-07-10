@@ -79,8 +79,7 @@ namespace Task06
                     comboBoxModel.Items.Add("Q4");
                     comboBoxModel.Items.Add("Q5");
                     break;
-                default:
-                    break;
+                
             }
         }
 
