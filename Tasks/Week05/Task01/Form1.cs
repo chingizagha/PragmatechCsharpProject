@@ -45,10 +45,24 @@ namespace Task01
                     resultLabel.Text = (first * second).ToString();
                     break;
                 case "%":
-                    resultLabel.Text = (first % second).ToString();
+                    if (second == 0)
+                    {
+                        MessageBox.Show("Error");
+                    }
+                    else
+                    {
+                        resultLabel.Text = (first % second).ToString();
+                    }
                     break;
                 case "/":
-                    resultLabel.Text = (Convert.ToDouble(first) / second).ToString();
+                    if (second == 0)
+                    {
+                        MessageBox.Show("Error");
+                    }
+                    else
+                    {
+                        resultLabel.Text = (Convert.ToDouble(first) / second).ToString();
+                    }
                     break;
             }
         }
