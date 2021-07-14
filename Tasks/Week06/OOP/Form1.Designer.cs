@@ -44,6 +44,12 @@ namespace OOP
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.columnHeaderCategory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderWeight = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDelivery = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.SuspendLayout();
@@ -52,10 +58,15 @@ namespace OOP
             // 
             this.comboBoxCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategory.FormattingEnabled = true;
+            this.comboBoxCategory.Items.AddRange(new object[] {
+            "Category 1",
+            "Category 2",
+            "Category 3"});
             this.comboBoxCategory.Location = new System.Drawing.Point(119, 44);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(121, 28);
             this.comboBoxCategory.TabIndex = 0;
+            this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
             // labelCategory
             // 
@@ -69,20 +80,32 @@ namespace OOP
             // 
             // listViewData
             // 
+            this.listViewData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderCategory,
+            this.columnHeaderItem,
+            this.columnHeaderWeight,
+            this.columnHeaderDelivery,
+            this.columnHeaderPrice,
+            this.columnHeaderDate});
             this.listViewData.HideSelection = false;
-            this.listViewData.Location = new System.Drawing.Point(366, 98);
+            this.listViewData.Location = new System.Drawing.Point(324, 112);
             this.listViewData.Name = "listViewData";
-            this.listViewData.Size = new System.Drawing.Size(348, 268);
+            this.listViewData.Size = new System.Drawing.Size(450, 268);
             this.listViewData.TabIndex = 2;
             this.listViewData.UseCompatibleStateImageBehavior = false;
             this.listViewData.View = System.Windows.Forms.View.Details;
             // 
             // comboBoxDelivery
             // 
+            this.comboBoxDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDelivery.FormattingEnabled = true;
+            this.comboBoxDelivery.Items.AddRange(new object[] {
+            "Delivery 1",
+            "Delivery 2",
+            "Delivery 3 "});
             this.comboBoxDelivery.Location = new System.Drawing.Point(119, 190);
             this.comboBoxDelivery.Name = "comboBoxDelivery";
-            this.comboBoxDelivery.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxDelivery.Size = new System.Drawing.Size(121, 28);
             this.comboBoxDelivery.TabIndex = 3;
             // 
             // comboBoxItem
@@ -153,6 +176,7 @@ namespace OOP
             // dateTimePicker
             // 
             this.dateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.CustomFormat = "dd/mm/yyyy";
             this.dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker.Location = new System.Drawing.Point(21, 289);
             this.dateTimePicker.Name = "dateTimePicker";
@@ -168,6 +192,7 @@ namespace OOP
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtSearch
             // 
@@ -186,6 +211,31 @@ namespace OOP
             this.btnSearch.TabIndex = 14;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // columnHeaderCategory
+            // 
+            this.columnHeaderCategory.Text = "Category";
+            // 
+            // columnHeaderItem
+            // 
+            this.columnHeaderItem.Text = "Item";
+            // 
+            // columnHeaderWeight
+            // 
+            this.columnHeaderWeight.Text = "Weight";
+            // 
+            // columnHeaderDelivery
+            // 
+            this.columnHeaderDelivery.Text = "Delivery";
+            // 
+            // columnHeaderPrice
+            // 
+            this.columnHeaderPrice.Text = "Price";
+            // 
+            // columnHeaderDate
+            // 
+            this.columnHeaderDate.Text = "Date";
             // 
             // Form1
             // 
@@ -234,6 +284,12 @@ namespace OOP
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ColumnHeader columnHeaderCategory;
+        private System.Windows.Forms.ColumnHeader columnHeaderItem;
+        private System.Windows.Forms.ColumnHeader columnHeaderWeight;
+        private System.Windows.Forms.ColumnHeader columnHeaderDelivery;
+        private System.Windows.Forms.ColumnHeader columnHeaderPrice;
+        private System.Windows.Forms.ColumnHeader columnHeaderDate;
     }
 }
 
