@@ -26,25 +26,34 @@ namespace OOP
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Item prdct = new Item();
 
-            prdct.Category = comboBoxCategory.Text;
-            prdct.Product = comboBoxItem.Text;
-            prdct.Weight = Convert.ToInt32(numericUpDownWeight.Value);
-            prdct.Delivery = comboBoxDelivery.Text;
-            prdct.Price = Convert.ToInt32(numericUpDownPrice.Value);
-            prdct.OrderTime = dateTimePicker.Value;
+            if (numericUpDownWeight.Value == 0 || numericUpDownPrice.Value == 0)
+            {
+                MessageBox.Show("Please fill in all the required fields correctly");
+            }
+            else
+            {
+                Item prdct = new Item();
 
-            ListViewItem item = new ListViewItem();
+                prdct.Category = comboBoxCategory.Text;
+                prdct.Product = comboBoxItem.Text;
+                prdct.Weight = Convert.ToInt32(numericUpDownWeight.Value);
+                prdct.Delivery = comboBoxDelivery.Text;
+                prdct.Price = Convert.ToInt32(numericUpDownPrice.Value);
+                prdct.OrderTime = dateTimePicker.Value;
 
-            item.Text = prdct.Category;
-            item.SubItems.Add(prdct.Product);
-            item.SubItems.Add(prdct.Weight.ToString());
-            item.SubItems.Add(prdct.Delivery);
-            item.SubItems.Add(prdct.Price.ToString());
-            item.SubItems.Add(prdct.OrderTime.ToString());
+                ListViewItem item = new ListViewItem();
 
-            listViewData.Items.Add(item);
+                item.Text = prdct.Product;
+                item.SubItems.Add(prdct.Category);
+                item.SubItems.Add(prdct.Weight.ToString());
+                item.SubItems.Add(prdct.Delivery);
+                item.SubItems.Add(prdct.Price.ToString());
+                item.SubItems.Add(prdct.OrderTime.ToString());
+
+                listViewData.Items.Add(item);
+            }
+
         }
 
         private void comboBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -80,15 +89,28 @@ namespace OOP
         {
             if (txtSearch.Text != "")
             {
-                for(int i=listViewData.Items.Count-1;i>=0; i--)
+                
+                for (int i = listViewData.Items.Count - 1; i >= 0; i--)
                 {
+
                     var item = listViewData.Items[i];
                     if (item.Text.ToLower().Contains(txtSearch.Text.ToLower()))
                     {
                         item.BackColor = SystemColors.Highlight;
                         item.ForeColor = SystemColors.HighlightText;
+                        //MessageBox.Show(item.ToString());
                     }
+                    item.BackColor = default(Color);
+
                 }
+            }
+
+        }
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            for (int i = listViewData.SelectedItems.Count - 1; i >= 0; i--)
+            {
+                listViewData.Items.Remove(listViewData.SelectedItems[i]);
             }
         }
     }

@@ -32,6 +32,12 @@ namespace OOP
             this.comboBoxCategory = new System.Windows.Forms.ComboBox();
             this.labelCategory = new System.Windows.Forms.Label();
             this.listViewData = new System.Windows.Forms.ListView();
+            this.columnHeaderCategory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderWeight = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDelivery = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.comboBoxDelivery = new System.Windows.Forms.ComboBox();
             this.comboBoxItem = new System.Windows.Forms.ComboBox();
             this.labelItem = new System.Windows.Forms.Label();
@@ -44,12 +50,7 @@ namespace OOP
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.columnHeaderCategory = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderWeight = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderDelivery = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
             this.SuspendLayout();
@@ -81,19 +82,43 @@ namespace OOP
             // listViewData
             // 
             this.listViewData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderCategory,
             this.columnHeaderItem,
+            this.columnHeaderCategory,
             this.columnHeaderWeight,
             this.columnHeaderDelivery,
             this.columnHeaderPrice,
             this.columnHeaderDate});
             this.listViewData.HideSelection = false;
-            this.listViewData.Location = new System.Drawing.Point(324, 112);
+            this.listViewData.Location = new System.Drawing.Point(324, 84);
             this.listViewData.Name = "listViewData";
             this.listViewData.Size = new System.Drawing.Size(450, 268);
             this.listViewData.TabIndex = 2;
             this.listViewData.UseCompatibleStateImageBehavior = false;
             this.listViewData.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeaderCategory
+            // 
+            this.columnHeaderCategory.Text = "Category";
+            // 
+            // columnHeaderItem
+            // 
+            this.columnHeaderItem.Text = "Item";
+            // 
+            // columnHeaderWeight
+            // 
+            this.columnHeaderWeight.Text = "Weight";
+            // 
+            // columnHeaderDelivery
+            // 
+            this.columnHeaderDelivery.Text = "Delivery";
+            // 
+            // columnHeaderPrice
+            // 
+            this.columnHeaderPrice.Text = "Price";
+            // 
+            // columnHeaderDate
+            // 
+            this.columnHeaderDate.Text = "Date";
             // 
             // comboBoxDelivery
             // 
@@ -197,7 +222,7 @@ namespace OOP
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(366, 47);
+            this.txtSearch.Location = new System.Drawing.Point(324, 25);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(153, 26);
             this.txtSearch.TabIndex = 13;
@@ -205,7 +230,7 @@ namespace OOP
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(599, 47);
+            this.btnSearch.Location = new System.Drawing.Point(590, 20);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(115, 37);
             this.btnSearch.TabIndex = 14;
@@ -213,35 +238,23 @@ namespace OOP
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // columnHeaderCategory
+            // btnRemove
             // 
-            this.columnHeaderCategory.Text = "Category";
-            // 
-            // columnHeaderItem
-            // 
-            this.columnHeaderItem.Text = "Item";
-            // 
-            // columnHeaderWeight
-            // 
-            this.columnHeaderWeight.Text = "Weight";
-            // 
-            // columnHeaderDelivery
-            // 
-            this.columnHeaderDelivery.Text = "Delivery";
-            // 
-            // columnHeaderPrice
-            // 
-            this.columnHeaderPrice.Text = "Price";
-            // 
-            // columnHeaderDate
-            // 
-            this.columnHeaderDate.Text = "Date";
+            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Location = new System.Drawing.Point(324, 376);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(115, 37);
+            this.btnRemove.TabIndex = 15;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAdd);
@@ -290,6 +303,7 @@ namespace OOP
         private System.Windows.Forms.ColumnHeader columnHeaderDelivery;
         private System.Windows.Forms.ColumnHeader columnHeaderPrice;
         private System.Windows.Forms.ColumnHeader columnHeaderDate;
+        private System.Windows.Forms.Button btnRemove;
     }
 }
 
