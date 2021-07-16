@@ -84,27 +84,27 @@ namespace OOP
                     break;
             }
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (txtSearch.Text != "")
             {
-                
                 for (int i = listViewData.Items.Count - 1; i >= 0; i--)
                 {
-
                     var item = listViewData.Items[i];
-                    if (item.Text.ToLower().Contains(txtSearch.Text.ToLower()))
+                    if (item.Text.ToLower().Trim().Contains(txtSearch.Text.ToLower().Trim()))
                     {
                         item.BackColor = SystemColors.Highlight;
                         item.ForeColor = SystemColors.HighlightText;
-                        //MessageBox.Show(item.ToString());
+                        //MessageBox.Show($"This {txtSearch.Text} is in stock");
                     }
-                    item.BackColor = default(Color);
-
+                    else
+                    {
+                        //MessageBox.Show($"This {txtSearch.Text} is not in stock");
+                        item.BackColor = SystemColors.WindowFrame;
+                        item.ForeColor = SystemColors.HighlightText;
+                    }
                 }
             }
-
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
