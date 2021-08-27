@@ -1,0 +1,10 @@
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\bin\Debug\FoodApp.exe.config
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\bin\Debug\FoodApp.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\bin\Debug\FoodApp.pdb
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.csproj.AssemblyReference.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.Form1.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.Properties.Resources.resources
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.csproj.GenerateResource.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.csproj.CoreCompileInputs.cache
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.exe
+C:\Users\Flauz\Desktop\PragmatechCsharpProject\Tasks\Week07\FoodApp\obj\Debug\FoodApp.pdb
